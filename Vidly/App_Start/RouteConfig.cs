@@ -14,13 +14,13 @@ namespace Vidly {
             routes.MapMvcAttributeRoutes();
 
             //custom  Routes
-            //routes.MapRoute(
-            //    "MoviesByReleaseDate",
-            //    "movies/released/{year}/{month}",
-            //    new {controller = "Movies", action = "ByReleaseDate" },
-            //    //new {year = @"\d{4}", month = @"\d{2}"  //this says to use a year of 4 digits and month with 2
-            //    new {year = @"2015|2016", month = @"\d{2}" //this limits year to 2015 or 2016
-            //    });
+            routes.MapRoute(
+                "MoviesByReleaseDate",
+                "movies/released/{year}/{month}",
+                new {controller = "Movies", action = "ByReleaseDate" },
+                //new {year = @"\d{4}", month = @"\d{2}"  //this says to use a year of 4 digits and month with 2
+                new {year = @"2015|2016", month = @"\d{2}" //this limits year to 2015 or 2016
+                });
 
             routes.MapRoute(
                 name: "Default",
