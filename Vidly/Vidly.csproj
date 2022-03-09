@@ -137,8 +137,21 @@
     <Compile Include="Migrations\202203071801413_InitialModel.designer.cs">
       <DependentUpon>202203071801413_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203091541354_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\202203091541354_AddIsSubscribedToCustomer.designer.cs">
+      <DependentUpon>202203091541354_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203091546314_AddMembershipType.cs" />
+    <Compile Include="Migrations\202203091546314_AddMembershipType.designer.cs">
+      <DependentUpon>202203091546314_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203091603264_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\202203091603264_PopulateMembershipTypes.designer.cs">
+      <DependentUpon>202203091603264_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\myData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -206,6 +219,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202203071801413_InitialModel.resx">
       <DependentUpon>202203071801413_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203091541354_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>202203091541354_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203091546314_AddMembershipType.resx">
+      <DependentUpon>202203091546314_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203091603264_PopulateMembershipTypes.resx">
+      <DependentUpon>202203091603264_PopulateMembershipTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
